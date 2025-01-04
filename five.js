@@ -1,17 +1,14 @@
-     
-        "use strict"
-
- let obj={a:20,a:10}
-
- console.log(obj.a);
- 
 
 
+function greet(callback){
+  setTimeout(()=>{
+    console.log("hello nihal")
+    callback
+  },3000);
+}
 
-  
-    function hallo(){
-        console.log(this);
-        
-    }
-
-hallo()
+  function hello(){
+    console.log("hi nihal")
+  }
+  greet();
+  hello();
