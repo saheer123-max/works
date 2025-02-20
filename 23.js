@@ -33,25 +33,27 @@
 
 
 
-function arrayWrapper(nums) {
-    return {
-      valueOf: function () {
-        return nums.reduce((sum, num) => sum + num, 0);
-      },
-      toString: function () {
-        return `[${nums.join(",")}]`;
-      },
-    };
-  }
+// function arrayWrapper(nums) {
+//     return {
+//       valueOf: function () {
+//         return nums.reduce((sum, num) => sum + num, 0);
+//       },
+//       toString: function () {
+//         return `[${nums.join(",")}]`;
+//       },
+//     };
+//   }
   
-  // Example Usage
-      const obj1 = arrayWrapper([1, 2, 3]);
-      const obj2 = arrayWrapper([4, 5]);
+//   // Example Usage
+//       const obj1 = arrayWrapper([1, 2, 3]);
+//       const obj2 = arrayWrapper([4, 5]);
   
-      console.log(obj1 + obj2);   // Output: 15
-      console.log(String(obj1));  // Output: [1,2,3]
-      console.log(String(obj2));  // Output: [4,5]
+//       console.log(obj1 + obj2);   // Output: 15
+//       console.log(String(obj1));  // Output: [1,2,3]
+//       console.log(String(obj2));  // Output: [4,5]
   
+
+
 
 
 
