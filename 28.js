@@ -16,6 +16,32 @@
 // };
 
 
-function findLUSlength(a, b) {
-  return a === b ? -1 : Math.max(a.length, b.length);
+// function findLUSlength(a, b) {
+//   return a === b ? -1 : Math.max(a.length, b.length);
+// }
+ 
+import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import TextContext from "./Textcontext"; 
+
+function Text() {
+  const navigate = useNavigate();
+  const { setText } = useContext(TextContext); 
+  const {setdata}=useContext(TextContext)
+  return (
+    <div>
+      <input 
+        type="text"
+        onChange={(e) => setText(e.target.value)}
+      />
+      <textarea rows={4} placeholder="Type something"
+      
+      onChange={(e)=>setdata(e.target.value)}
+      ></textarea>
+      <button onClick={() => navigate("/")}>Submit</button>
+    </div>
+  );
 }
+
+export default Text;
+
