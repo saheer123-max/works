@@ -54,17 +54,17 @@ class Program
     static void Main(string[]args)
     {
         int jan, feb, mar, avg, total;
-        Console.Write(" enter jan attendence");
-        jan=int.Parse(Console.ReadLine());
-        Console.WriteLine("enter feb attendence");
-        feb = int.Parse(Console.ReadLine());
-        Console.WriteLine("enter mar attendence");
-        mar = int.Parse(Console.ReadLine());
-        total = jan + feb + mar;
-        Console.WriteLine($"tottal is{ total }");
-        avg = total / 3;
-        Console.WriteLine($" avg iss{avg}");
+    //     Console.Write(" enter jan attendence");
+    //     jan=int.Parse(Console.ReadLine());
+    //     Console.WriteLine("enter feb attendence");
+    //     feb = int.Parse(Console.ReadLine());
+    //     Console.WriteLine("enter mar attendence");
+    //     // +mar = int.Parse(Console.ReadLine());
+    //     total = jan + feb + mar;
+    //     Console.WriteLine($"tottal is{ total }");
+    //     avg = total / 3;
+    //     Console.WriteLine($" avg iss{avg}");
 
 
-    }
+    // }
 }
