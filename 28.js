@@ -80,24 +80,38 @@
 
 
 
-const check=(n)=>{
-    let res=[]
+// const check=(n)=>{
+//     let res=[]
      
- for(let i=1;i<=n;i++){
-    if(i%3==0 && i %5==0){
-        res.push("fizz BUZZ")
-    }else if(i%3==0){
-      res.push("fizz")
-    }else if(i%5==0){
-     res.push("buzz")
-    }
-    else{
-        res.push(i.toString())
-    }
- }
- return res
+//  for(let i=1;i<=n;i++){
+//     if(i%3==0 && i %5==0){
+//         res.push("fizz BUZZ")
+//     }else if(i%3==0){
+//       res.push("fizz")
+//     }else if(i%5==0){
+//      res.push("buzz")
+//     }
+//     else{
+//         res.push(i.toString())
+//     }
+//  }
+//  return res
 
-    }
+//     }
 
     
-console.log(check(15))
+// console.log(check(15))
+
+
+function hallo(ns){
+let nn=ns.toString()
+let spli=nn.split(" ")
+console.log(nn);
+
+
+}
+
+
+let num =234
+hallo(num)
+
