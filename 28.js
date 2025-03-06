@@ -103,15 +103,21 @@
 // console.log(check(15))
 
 
-function hallo(ns){
-let nn=ns.toString()
-let spli=nn.split(" ")
-console.log(nn);
+// function hallo(ns){
+// let nn=ns.toString()
+// let spli=nn.split(" ")
+// console.log(nn);
 
 
+// }
+
+
+// let num =234
+// hallo(num)
+
+function subtractProductAndSum(n) {
+    let digits = n.toString().split("").map(Number);
+    let product = digits.reduce((acc, num) => acc * num, 1);
+    let sum = digits.reduce((acc, num) => acc + num, 0);
+    return product - sum;
 }
-
-
-let num =234
-hallo(num)
-
