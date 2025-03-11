@@ -115,9 +115,80 @@
 // let num =234
 // hallo(num)
 
-function subtractProductAndSum(n) {
-    let digits = n.toString().split("").map(Number);
-    let product = digits.reduce((acc, num) => acc * num, 1);
-    let sum = digits.reduce((acc, num) => acc + num, 0);
-    return product - sum;
+// function subtractProductAndSum(n) {
+//     let digits = n.toString().split("").map(Number);
+//     let product = digits.reduce((acc, num) => acc * num, 1);
+//     let sum = digits.reduce((acc, num) => acc + num, 0);
+//     return product - sum;
+// }
+
+
+
+
+
+
+
+
+class bank
+{
+
+    private string accoundholder;
+    private double initialbalance;
+
+    public bank(string holder, double balance)
+
+    {
+        accoundholder = holder;
+        initialbalance = balance > 0 ? balance : 0;
+    }
+
+
+    public string Accoundholder
+    {
+        get { return accoundholder; }
+    }
+
+
+    public double Initialbalance
+    {
+        get { return initialbalance; }
+
+
+    }
+    public void deposit(double amoound)
+    {
+        if(amoound > 0)
+        {
+            initialbalance += amoound;
+            Console.WriteLine($"depo{amoound} new balance {initialbalance}");
+        }
+    }
+
+public void widrow(double amoound)
+    {
+        if(amoound > 0 && amoound  <= initialbalance)
+        {
+            initialbalance -= amoound;
+            Console.WriteLine($"widro {amoound}  balance {initialbalance}");
+        }
+    }
+
+
+
+}
+
+class program
+{
+static void Main()
+    {
+        bank mybank = new bank("aslam",1000);
+        Console.WriteLine($"Account Holder: {mybank.Accoundholder}");
+        Console.WriteLine($"Initial Balance: ${mybank.Initialbalance}");
+
+
+        mybank.deposit(1000);
+        mybank.widrow(120);
+    }
+
+
 }
